@@ -40,7 +40,11 @@ const ContactPage = ({ dropMenu, onDropMenu }) => {
             users, drop us a line.
           </motion.p>
         </motion.article>
-        <motion.form variants={introVariants} action='' className='text-sm'>
+        <motion.form
+          variants={introVariants}
+          className='text-sm'
+          onSubmit={(e) => e.preventDefault()}
+        >
           <input
             type='text'
             name='Name'
@@ -65,7 +69,10 @@ const ContactPage = ({ dropMenu, onDropMenu }) => {
             placeholder='Your Message'
             className='w-full pb-28 pt-8 pl-3 border-b focus:border-b-2 border-white focus:outline-none bg-transparent placeholder:font-medium placeholder:text-gray-100 placeholder:text-opacity-50'
           />
-          <button className='bg-white hover:bg-light-peach hover:text-white mt-10 text-sm font-medium tracking-widest text-black p-5 px-12 rounded-lg'>
+          <button
+            type='submit'
+            className='bg-white hover:bg-light-peach hover:text-white mt-10 text-sm font-medium tracking-widest text-black p-5 px-12 rounded-lg'
+          >
             SUBMIT
           </button>
         </motion.form>
