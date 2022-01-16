@@ -15,7 +15,7 @@ const Footer = () => {
           <h2 className='text-3xl w-4/5 mx-auto t:text-4xl t:w-4/5 t:mx-auto d:w-2/3 d:ml-12'>
             Let’s talk about your project
           </h2>
-          <h5 className='text-sm font-light leading-7 t:w-3/5 t:mx-auto d:w-4/5'>
+          <h5 className='text-sm font-light leading-7 t:w-3/5 t:mx-auto d:w-4/5 d:mx-0'>
             Ready to take it to the next level? Contact us today and find out
             how our expertise can help your business grow.
           </h5>
