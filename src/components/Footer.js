@@ -12,10 +12,10 @@ const Footer = () => {
     <footer className='bg-black px-6 t:px-10 d:px-40 text-center'>
       <section className='grid d:grid-cols-2 d:items-center d:text-left -mt-48 px-6 py-20 d:px-10 gap-8 text-white bg-peach bg-no-repeat bg-right bg-fill bg-m-footer t:bg-t-footer d:bg-d-footer rounded-xl'>
         <article className='grid gap-8'>
-          <h2 className='text-3xl w-4/5 mx-auto t:text-4xl t:w-4/5 t:mx-auto d:w-2/3 d:ml-12'>
+          <h2 className='text-3xl w-4/5 mx-auto t:w-3/5 d:w-2/3 d:ml-10'>
             Let’s talk about your project
           </h2>
-          <h5 className='text-sm font-light leading-7 t:w-3/5 t:mx-auto d:w-4/5 d:mx-0'>
+          <h5 className='text-sm font-light leading-7 t:w-3/5 t:mx-auto d:w-4/5 d:ml-10'>
             Ready to take it to the next level? Contact us today and find out
             how our expertise can help your business grow.
           </h5>
