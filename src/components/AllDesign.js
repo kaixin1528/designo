@@ -8,7 +8,11 @@ const AllDesign = ({ img, title, description }) => {
       viewport={{ once: false }}
       className='grid t:grid-cols-2 d:grid-cols-1 t:items-center group bg-very-light-peach hover:bg-peach transition duration-200 ease-in-out transform hover:scale-105 rounded-xl'
     >
-      <img src={img} alt='express' className='h-full rounded-t-lg' />
+      <img
+        src={img}
+        alt='express'
+        className='h-full rounded-t-lg t:rounded-l-lg'
+      />
       <section className='grid py-10 px-8 gap-5 text-center'>
         <h3 className='text-xl text-peach font-medium group-hover:text-white tracking-widest'>
           {title}
