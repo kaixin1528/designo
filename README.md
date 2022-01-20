@@ -5,7 +5,6 @@
 - [Overview](#overview)
   - [Getting Started](#getting-started)
   - [Project Summary](#project-summary)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -28,9 +27,9 @@ yarn install
 Then, run the development server:
 
 ```bash
-npm run dev
+npm start
 # or
-yarn dev
+yarn start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -42,11 +41,6 @@ Designo is an imaginative design agency that is experienced in creating responsi
 As a multipage responsive website, it has a page designated for each design category where one can browse through the 
 previews for the past projects designed by Designo. It also has a About, Location, and Contact page for users to learn 
 more about the agency.
-
-
-### Screenshot
-
-![](./screenshot.jpg)
 
 ### Links
 
@@ -87,17 +81,48 @@ const proudOfThisFunc = () => {
 };
 ```
 
-If you want more help with writing markdown, we'd recommend checking out
-[The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with
-your own learnings.**
+For this project, I made use of Framer Motion's staggering children functionality. By  
+```html
+      <motion.section
+        variants={introVariants}
+        initial='hidden'
+        animate='visible'
+      >
+        <motion.article
+          variants={introVariants}
+        >
+          <motion.h1
+            variants={introVariants}
+          >
+            Award-winning custom designs and digital branding solutions
+          </motion.h1>
+            <motion.button
+              variants={introVariants}
+              whileHover={{
+                backgroundColor: "#FFAD9B",
+                color: "white",
+                scale: 1.1,
+              }}
+            >
+             ...
+            </motion.button>
+        </motion.article>
+        <motion.div
+          variants={introVariants}
+          className='h-72 t:h-96 t:mb-20 d:mb-0'
+        >
+          ...
+        </motion.div>
+      </motion.section>
+```
 
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in
 future projects. These could be concepts you're still not completely comfortable
 with or techniques you found useful that you want to refine and perfect.
+
+
 
 **Note: Delete this note and the content within this section and replace with
 your own plans for continued development.**
