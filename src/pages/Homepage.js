@@ -6,19 +6,12 @@ import friendly from "../assets/home/desktop/illustration-friendly.svg";
 import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 import ScrollToTop from "../components/ScrollToTop";
-import Design from "../components/Design";
 import Illustration from "../components/Illustration";
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import arrow from "../assets/shared/desktop/icon-right-arrow.svg";
 
 const Homepage = ({ dropMenu, onDropMenu }) => {
-  const designs = [
-    { link: "web-design", title: "WEB" },
-    { link: "app-design", title: "APP" },
-    { link: "graphic-design", title: "GRAPHIC" },
-  ];
-
   const illustrations = [
     {
       img: passionate,
