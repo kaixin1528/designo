@@ -10,6 +10,7 @@ import Design from "../components/Design";
 import Illustration from "../components/Illustration";
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import arrow from "../assets/shared/desktop/icon-right-arrow.svg";
 
 const Homepage = ({ dropMenu, onDropMenu }) => {
   const designs = [
@@ -104,9 +105,64 @@ const Homepage = ({ dropMenu, onDropMenu }) => {
 
       {/* Designs */}
       <ul className='grid d:grid-cols-2 px-6 py-32 t:px-10 d:px-40 gap-6 text-white text-center '>
-        {designs.map((design, index) => {
-          return <Design key={index} link={design.link} title={design.title} />;
-        })}
+        <Link to={`/web-design`} className='grid d:row-span-2'>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 0.8 } }}
+            viewport={{ once: false }}
+            key={0}
+            className={`grid px-10 py-28 d:py-64
+            gap-3 t:gap-6 t:py-12 d:items-center bg-blend-multiply transition duration-300 ease-in-out transform hover:scale-105 bg-dark-grey hover:bg-peach bg-opacity-75 bg-center bg-cover bg-m-web-design t:bg-t-web-design d:bg-d-web-design rounded-xl`}
+          >
+            <h2 className='text-2xl t:text-3xl font-medium tracking-widest'>
+              WEB DESIGN
+            </h2>
+            <section className='grid grid-flow-col auto-cols-max mx-auto items-center gap-5'>
+              <h5 className='text-sm font-light tracking-widest'>
+                VIEW PROEJCTS
+              </h5>
+              <img src={arrow} alt='arrow' />
+            </section>
+          </motion.li>
+        </Link>
+        <Link to={`/app-design`} className='grid'>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 0.8 } }}
+            viewport={{ once: false }}
+            key={1}
+            className={`grid px-10 py-28 d:py-28 gap-3 t:gap-6 t:py-12 d:items-center bg-blend-multiply transition duration-300 ease-in-out transform hover:scale-105 bg-dark-grey hover:bg-peach bg-opacity-75 bg-center bg-cover bg-m-app-design t:bg-t-app-design d:bg-d-app-design rounded-xl`}
+          >
+            <h2 className='text-2xl t:text-3xl font-medium tracking-widest'>
+              APP DESIGN
+            </h2>
+            <section className='grid grid-flow-col auto-cols-max mx-auto items-center gap-5'>
+              <h5 className='text-sm font-light tracking-widest'>
+                VIEW PROEJCTS
+              </h5>
+              <img src={arrow} alt='arrow' />
+            </section>
+          </motion.li>
+        </Link>
+        <Link to={`/graphic-design`} className='grid'>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 0.8 } }}
+            viewport={{ once: false }}
+            key={2}
+            className={`grid px-10 py-28 d:py-28 gap-3 t:gap-6 t:py-12 d:items-center bg-blend-multiply transition duration-300 ease-in-out transform hover:scale-105 bg-dark-grey hover:bg-peach bg-opacity-75 bg-center bg-cover bg-m-graphic-design t:bg-t-graphic-design d:bg-d-graphic-design rounded-xl`}
+          >
+            <h2 className='text-2xl t:text-3xl font-medium tracking-widest'>
+              GRAPHIC DESIGN
+            </h2>
+            <section className='grid grid-flow-col auto-cols-max mx-auto items-center gap-5'>
+              <h5 className='text-sm font-light tracking-widest'>
+                VIEW PROEJCTS
+              </h5>
+              <img src={arrow} alt='arrow' />
+            </section>
+          </motion.li>
+        </Link>
       </ul>
 
       {/* Illustrations */}
