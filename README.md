@@ -3,7 +3,8 @@
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
+  - [Getting Started](#getting-started)
+  - [Project Summary](#project-summary)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -14,7 +15,28 @@
 
 ## Overview
 
-### The challenge
+### Getting Started 
+
+First, install all the necessary dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+Then, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+
+### Project Summary
 
 You should be able to:
 
@@ -37,11 +59,8 @@ You should be able to:
 - CSS custom properties
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Tailwind CSS](https://tailwindcss.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above
-with your own choices**
+- [React](https://reactjs.org/) 
+- [Tailwind CSS](https://tailwindcss.com/) 
 
 ### What I learned
 
@@ -84,4 +103,4 @@ your own plans for continued development.**
 
 ## Author
 
-- Website - [Kaixin Huang](https://kaixin-portfolio.netlify.app)
+- Portfolio Website - [Kaixin Huang](https://kaixin-portfolio.netlify.app)
