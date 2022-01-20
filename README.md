@@ -38,10 +38,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### Project Summary
 
-You should be able to:
+Designo is an imaginative design agency that is experienced in creating responsive websites, app, and graphic designs. 
+As a multipage responsive website, it has a page designated for each design category where one can browse through the 
+previews for the past projects designed by Designo. It also has a About, Location, and Contact page for users to learn 
+more about the agency.
 
-- View the optimal layout for each page depending on your device's screen size
-- See hover states for all interactive elements throughout the site
 
 ### Screenshot
 
