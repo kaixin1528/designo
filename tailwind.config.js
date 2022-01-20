@@ -21,7 +21,7 @@ module.exports = {
     extend: {
       screens: {
         t: "768px",
-        d: "1024px",
+        d: "1100px",
       },
       backgroundImage: {
         "hero-home": "url('./assets/home/desktop/bg-pattern-hero-home.svg')",

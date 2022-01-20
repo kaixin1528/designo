@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const OtherDesigns = ({ design1, design2 }) => {
   return (
-    <main className='grid d:grid-cols-2 pb-80 px-6 t:px-10 d:px-40 gap-6 text-white text-center'>
+    <section className='grid d:grid-cols-2 pb-80 px-6 t:px-10 d:px-40 gap-6 text-white text-center'>
       <Link to={`/${design1}-design`} className='grid'>
         <motion.button
           initial={{ opacity: 0 }}
@@ -41,7 +41,7 @@ const OtherDesigns = ({ design1, design2 }) => {
           </section>
         </motion.button>
       </Link>
-    </main>
+    </section>
   );
 };
 

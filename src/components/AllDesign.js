@@ -13,14 +13,14 @@ const AllDesign = ({ img, title, description }) => {
         alt='design'
         className='rounded-t-lg t:rounded-tr-none t:rounded-l-lg d:rounded-t-lg d:rounded-bl-none'
       />
-      <section className='grid py-10 px-8 gap-5 text-center'>
+      <article className='grid py-10 px-8 gap-5 text-center'>
         <h3 className='text-xl text-peach font-medium group-hover:text-white tracking-widest'>
           {title}
         </h3>
         <p className='group-hover:text-white text-xs leading-7 font-light tracking-widest'>
           {description}
         </p>
-      </section>
+      </article>
     </motion.button>
   );
 };

@@ -10,7 +10,7 @@ const AboutPage = ({ dropMenu, onDropMenu }) => {
       <Header dropMenu={dropMenu} onDropMenu={onDropMenu} />
       {/* About Us */}
       <section className='grid d:grid-cols-2 t:mx-10 d:mx-40 t:rounded-xl t:mb-20'>
-        <section className='grid t:rounded-t-lg d:rounded-r-lg d:rounded-tl-none d:order-last bg-no-repeat bg-left bg-cover bg-m-about-hero t:bg-t-about-hero d:bg-d-about-hero h-96 d:h-full w-full'></section>
+        <div className='grid t:rounded-t-lg d:rounded-r-lg d:rounded-tl-none d:order-last bg-no-repeat bg-left bg-cover bg-m-about-hero t:bg-t-about-hero d:bg-d-about-hero h-96 d:h-full w-full'></div>
         <article className='grid t:rounded-b-lg t:px-20 d:rounded-l-lg d:rounded-br-none d:text-left px-6 py-20 gap-8 text-center text-white bg-no-repeat d:bg-bottom bg-fill bg-hero-home bg-peach'>
           <h1 className='text-3xl t:text-4xl font-medium'>About Us</h1>
           <p className='text-sm font-light leading-7 '>
@@ -26,7 +26,7 @@ const AboutPage = ({ dropMenu, onDropMenu }) => {
 
       {/* World-class talent */}
       <section className='grid d:grid-cols-2 pb-28 t:mx-10 d:mx-40 t:rounded-xl'>
-        <section className='grid t:rounded-t-lg d:rounded-l-lg d:rounded-tr-none bg-no-repeat bg-center bg-cover bg-m-world-class t:bg-t-world-class d:bg-d-world-class h-96 d:h-full w-full'></section>
+        <div className='grid t:rounded-t-lg d:rounded-l-lg d:rounded-tr-none bg-no-repeat bg-center bg-cover bg-m-world-class t:bg-t-world-class d:bg-d-world-class h-96 d:h-full w-full'></div>
         <article className='grid t:rounded-b-lg t:px-20 d:rounded-r-lg d:rounded-bl-none d:text-left px-6 py-20 gap-8 text-center text-white bg-very-light-peach bg-no-repeat bg-center bg-contain bg-about'>
           <h1 className='text-3xl t:text-4xl font-medium text-peach'>
             World-class talent
@@ -51,7 +51,7 @@ const AboutPage = ({ dropMenu, onDropMenu }) => {
 
       {/* Real Deal */}
       <section className='grid d:grid-cols-2 pb-80 t:mx-10 d:mx-40 t:rounded-xl'>
-        <section className='grid t:rounded-t-lg d:rounded-r-lg d:rounded-tl-none d:order-last bg-no-repeat bg-center bg-cover bg-m-real-deal t:bg-t-real-deal d:bg-d-real-deal h-96 d:h-full w-full'></section>
+        <div className='grid t:rounded-t-lg d:rounded-r-lg d:rounded-tl-none d:order-last bg-no-repeat bg-center bg-cover bg-m-real-deal t:bg-t-real-deal d:bg-d-real-deal h-96 d:h-full w-full'></div>
         <article className='grid t:rounded-b-lg t:px-20 d:rounded-l-lg d:rounded-br-none d:px-20 d:text-left px-6 py-20 gap-8 text-center text-white bg-very-light-peach bg-no-repeat bg-center bg-contain bg-about'>
           <h1 className='text-3xl t:text-4xl font-medium text-peach'>
             The real deal

@@ -90,7 +90,7 @@ const Homepage = ({ dropMenu, onDropMenu }) => {
             </motion.button>
           </Link>
         </motion.article>
-        <motion.section
+        <motion.div
           variants={introVariants}
           className='h-72 t:h-96 t:mb-20 d:mb-0'
         >
@@ -99,18 +99,18 @@ const Homepage = ({ dropMenu, onDropMenu }) => {
             alt='hero-phone'
             className='mx-auto t:scale-110 d:scale-150 d:mt-10'
           />
-        </motion.section>
+        </motion.div>
       </motion.section>
 
       {/* Designs */}
-      <section className='grid d:grid-cols-2 px-6 py-32 t:px-10 d:px-40 gap-6 text-white text-center '>
+      <ul className='grid d:grid-cols-2 px-6 py-32 t:px-10 d:px-40 gap-6 text-white text-center '>
         {designs.map((design, index) => {
           return <Design key={index} link={design.link} title={design.title} />;
         })}
-      </section>
+      </ul>
 
       {/* Illustrations */}
-      <section className='grid d:grid-cols-3 px-6 pb-80 t:px-10 d:px-40 gap-24'>
+      <ul className='grid d:grid-cols-3 px-6 pb-80 t:px-10 d:px-40 gap-24'>
         {illustrations.map((illustration, index) => {
           return (
             <Illustration
@@ -121,7 +121,7 @@ const Homepage = ({ dropMenu, onDropMenu }) => {
             />
           );
         })}
-      </section>
+      </ul>
 
       <Footer />
 

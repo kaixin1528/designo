@@ -69,7 +69,7 @@ const GraphicDesignPage = ({ dropMenu, onDropMenu }) => {
       </motion.article>
 
       {/* Graphic Designs */}
-      <section className='grid d:grid-cols-3 mx-6 my-24 t:mx-10 d:mx-40 gap-10 '>
+      <ul className='grid d:grid-cols-3 mx-6 my-24 t:mx-10 d:mx-40 gap-10 '>
         {designs.map((design, index) => {
           return (
             <AllDesign
@@ -80,7 +80,7 @@ const GraphicDesignPage = ({ dropMenu, onDropMenu }) => {
             />
           );
         })}
-      </section>
+      </ul>
 
       <OtherDesigns design1='app' design2='web' />
 

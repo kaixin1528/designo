@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Menu = ({ onDropMenu }) => {
   return (
-    <motion.main
+    <motion.aside
       initial={{ y: 100 }}
       animate={{
         y: 0,
@@ -41,7 +41,7 @@ const Menu = ({ onDropMenu }) => {
           </motion.button>
         </Link>
       </nav>
-    </motion.main>
+    </motion.aside>
   );
 };
 
