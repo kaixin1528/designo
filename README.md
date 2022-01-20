@@ -84,4 +84,4 @@ your own plans for continued development.**
 
 ## Author
 
-- Website - [Kaixin Huang](https://www.your-site.com)
+- Website - [Kaixin Huang](https://kaixin-portfolio.netlify.app)
