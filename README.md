@@ -59,16 +59,7 @@ more about the agency.
 
 ### What I learned
 
-I was able to blend together the background image with the background color, in this case dark grey with 75% opacity. This allows the background color to 
-overlap nicely with the background image while allowing the main text to be legible.
-
-```html
-<motion.li
-  className={`bg-blend-multiply transition duration-300 ease-in-out transform hover:scale-105 bg-dark-grey hover:bg-peach bg-opacity-75 bg-center bg-cover bg-m-graphic-design t:bg-t-graphic-design d:bg-d-graphic-design rounded-xl`}
->
-```
-
-One of the biggest components of this project is to make well-responsive layouts for different screen sizes. As shown in the code snippet below, 
+One of the biggest tasks of this project is to make well-responsive layouts for different screen sizes. As shown in the code snippet below, 
 the background image component is placed atop for mobile and tablet, but is then switched to the right for desktop. The location component for 
 desktop is stretched to 2 columns, and the contact info component is separated into 2 columns for tablet and above. To adjust for this responsiveness,
 this whole component is switched to 3 columns to make more room for the location description for the desktop version.
@@ -83,6 +74,15 @@ this whole component is switched to 3 columns to make more room for the location
     </section>
   </article>
 </article>
+```
+
+I was able to blend together the background image with the background color, in this case dark grey with 75% opacity. This allows the background color to 
+overlap nicely with the background image while allowing the main text to be legible.
+
+```html
+<motion.li
+  className={`bg-blend-multiply transition duration-300 ease-in-out transform hover:scale-105 bg-dark-grey hover:bg-peach bg-opacity-75 bg-center bg-cover bg-m-graphic-design t:bg-t-graphic-design d:bg-d-graphic-design rounded-xl`}
+>
 ```
 
 I made use of Framer Motion's staggering children functionality. By creating a variant for the intro component and applying 
@@ -118,14 +118,8 @@ effect
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in
-future projects. These could be concepts you're still not completely comfortable
-with or techniques you found useful that you want to refine and perfect.
-
-
-
-**Note: Delete this note and the content within this section and replace with
-your own plans for continued development.**
+For further development, I would work on creating an specialized page for each design so that I can learn more about creating individual routes 
+in a React App. In addition, I would work on form validation for the contact form.
 
 ## Author
 
