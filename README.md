@@ -69,11 +69,6 @@ To see how you can add code snippets, see below:
 <h1>Some HTML code I'm proud of</h1>
 ```
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 
 ```js
 const proudOfThisFunc = () => {
@@ -81,39 +76,44 @@ const proudOfThisFunc = () => {
 };
 ```
 
-For this project, I made use of Framer Motion's staggering children functionality. By  
+I was able to blend together the background image with the background color, in this case dark grey with 75% opacity. This allows the background color to 
+overlap nicely with the background image while allowing the main text to be legible.
+
+```css
+<motion.li
+  className={`grid px-10 py-28 d:py-28 gap-3 t:gap-6 t:py-12 d:items-center bg-blend-multiply transition duration-300 ease-in-out transform hover:scale-105 bg-dark-grey hover:bg-peach bg-opacity-75 bg-center bg-cover bg-m-graphic-design t:bg-t-graphic-design d:bg-d-graphic-design rounded-xl`}
+>
+```
+
+I made use of Framer Motion's staggering children functionality. By creating a variant for the intro component and applying 
+the variant on subsequent descendants, I was able to make the components appear in sequence with a certain delay. 
+effect 
 ```html
-      <motion.section
+  <motion.section
+    variants={introVariants}
+    initial='hidden'
+    animate='visible'
+  >
+    <motion.article
+      variants={introVariants}
+    >
+      <motion.h1
         variants={introVariants}
-        initial='hidden'
-        animate='visible'
       >
-        <motion.article
+       ...
+      </motion.h1>
+        <motion.button
           variants={introVariants}
         >
-          <motion.h1
-            variants={introVariants}
-          >
-            Award-winning custom designs and digital branding solutions
-          </motion.h1>
-            <motion.button
-              variants={introVariants}
-              whileHover={{
-                backgroundColor: "#FFAD9B",
-                color: "white",
-                scale: 1.1,
-              }}
-            >
-             ...
-            </motion.button>
-        </motion.article>
-        <motion.div
-          variants={introVariants}
-          className='h-72 t:h-96 t:mb-20 d:mb-0'
-        >
-          ...
-        </motion.div>
-      </motion.section>
+         ...
+        </motion.button>
+    </motion.article>
+    <motion.div
+      variants={introVariants}
+    >
+      ...
+    </motion.div>
+  </motion.section>
 ```
 
 ### Continued development
