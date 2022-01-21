@@ -59,30 +59,30 @@ more about the agency.
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working
-through this project. Writing these out and providing code samples of areas you
-want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
 I was able to blend together the background image with the background color, in this case dark grey with 75% opacity. This allows the background color to 
 overlap nicely with the background image while allowing the main text to be legible.
 
-```css
+```html
 <motion.li
-  className={`grid px-10 py-28 d:py-28 gap-3 t:gap-6 t:py-12 d:items-center bg-blend-multiply transition duration-300 ease-in-out transform hover:scale-105 bg-dark-grey hover:bg-peach bg-opacity-75 bg-center bg-cover bg-m-graphic-design t:bg-t-graphic-design d:bg-d-graphic-design rounded-xl`}
+  className={`bg-blend-multiply transition duration-300 ease-in-out transform hover:scale-105 bg-dark-grey hover:bg-peach bg-opacity-75 bg-center bg-cover bg-m-graphic-design t:bg-t-graphic-design d:bg-d-graphic-design rounded-xl`}
 >
+```
+
+One of the biggest components of this project is to make well-responsive layouts for different screen sizes. As shown in the code snippet below, 
+the background image component is placed atop for mobile and tablet, but is then switched to the right for desktop. The location component for 
+desktop is stretched to 2 columns, and the contact info component is separated into 2 columns for tablet and above. To adjust for this responsiveness,
+this whole component is switched to 3 columns to make more room for the location description for the desktop version.
+
+```html
+<article className='grid d:grid-cols-3 t:gap-8 t:mx-10 d:mx-40'>
+  <div className='t:rounded-lg d:order-last bg-no-repeat bg-center bg-cover bg-t-canada d:bg-d-canada h-96 w-full'></div>
+  <article className='grid t:rounded-lg d:col-span-2 p-20 d:py-28 gap-6 text-center bg-very-light-peach bg-no-repeat d:bg-[center_top_2rem] bg-cover bg-locations'>
+    ...
+    <section className='grid t:grid-cols-2 t:text-left text-sm gap-6'>
+      ...
+    </section>
+  </article>
+</article>
 ```
 
 I made use of Framer Motion's staggering children functionality. By creating a variant for the intro component and applying 
@@ -102,11 +102,11 @@ effect
       >
        ...
       </motion.h1>
-        <motion.button
-          variants={introVariants}
-        >
-         ...
-        </motion.button>
+      <motion.button
+        variants={introVariants}
+      >
+       ...
+      </motion.button>
     </motion.article>
     <motion.div
       variants={introVariants}
