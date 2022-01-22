@@ -5,7 +5,6 @@
 - [Overview](#overview)
   - [Getting Started](#getting-started)
   - [Project Summary](#project-summary)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -28,9 +27,9 @@ yarn install
 Then, run the development server:
 
 ```bash
-npm run dev
+npm start
 # or
-yarn dev
+yarn start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -38,14 +37,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### Project Summary
 
-You should be able to:
-
-- View the optimal layout for each page depending on your device's screen size
-- See hover states for all interactive elements throughout the site
-
-### Screenshot
-
-![](./screenshot.jpg)
+Designo is an imaginative design agency that is experienced in creating responsive websites, app, and graphic designs. 
+As a multipage responsive website, it has a page designated for each design category where one can browse through the 
+previews for the past projects designed by Designo. It also has a About, Location, and Contact page for users to learn 
+more about the agency.
 
 ### Links
 
@@ -64,42 +59,67 @@ You should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working
-through this project. Writing these out and providing code samples of areas you
-want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+One of the biggest tasks of this project is to make well-responsive layouts for different screen sizes. As shown in the code snippet below, 
+the background image component is placed atop for mobile and tablet, but is then switched to the right for desktop. The location component for 
+desktop is stretched to 2 columns, and the contact info component is separated into 2 columns for tablet and above. To adjust for this responsiveness,
+this whole component is switched to 3 columns to make more room for the location description for the desktop version.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<article className='grid d:grid-cols-3 t:gap-8 t:mx-10 d:mx-40'>
+  <div className='t:rounded-lg d:order-last bg-no-repeat bg-center bg-cover bg-t-canada d:bg-d-canada h-96 w-full'></div>
+  <article className='grid t:rounded-lg d:col-span-2 p-20 d:py-28 gap-6 text-center bg-very-light-peach bg-no-repeat d:bg-[center_top_2rem] bg-cover bg-locations'>
+    ...
+    <section className='grid t:grid-cols-2 t:text-left text-sm gap-6'>
+      ...
+    </section>
+  </article>
+</article>
 ```
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+I was able to blend together the background image with the background color, in this case dark grey with 75% opacity. This allows the background color to 
+overlap nicely with the background image while allowing the main text to be legible.
+
+```html
+<motion.li
+  className={`bg-blend-multiply transition duration-300 ease-in-out transform hover:scale-105 bg-dark-grey hover:bg-peach bg-opacity-75 bg-center bg-cover bg-m-graphic-design t:bg-t-graphic-design d:bg-d-graphic-design rounded-xl`}
+>
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+I made use of Framer Motion's staggering children functionality. By creating a variant for the intro component and applying 
+the variant on subsequent descendants, I was able to make the components appear in sequence with a certain delay. 
+effect 
+```html
+  <motion.section
+    variants={introVariants}
+    initial='hidden'
+    animate='visible'
+  >
+    <motion.article
+      variants={introVariants}
+    >
+      <motion.h1
+        variants={introVariants}
+      >
+       ...
+      </motion.h1>
+      <motion.button
+        variants={introVariants}
+      >
+       ...
+      </motion.button>
+    </motion.article>
+    <motion.div
+      variants={introVariants}
+    >
+      ...
+    </motion.div>
+  </motion.section>
 ```
-
-If you want more help with writing markdown, we'd recommend checking out
-[The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with
-your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in
-future projects. These could be concepts you're still not completely comfortable
-with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with
-your own plans for continued development.**
+For further development, I would work on creating an specialized page for each design so that I can learn more about creating individual routes 
+in a React App. In addition, I would work on form validation for the contact form.
 
 ## Author
 
