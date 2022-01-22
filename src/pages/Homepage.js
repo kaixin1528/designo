@@ -98,15 +98,15 @@ const Homepage = ({ dropMenu, onDropMenu }) => {
 
       {/* Designs */}
       <ul className='grid d:grid-cols-2 px-6 py-32 t:px-10 d:px-40 gap-6 text-white text-center'>
-        <motion.li
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, transition: { duration: 0.8 } }}
-          viewport={{ once: false }}
-          key={0}
-          className={`grid px-10 py-28 d:py-64
+        <Link to={`/web-design`} className='grid d:row-span-2'>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 0.8 } }}
+            viewport={{ once: false }}
+            key={0}
+            className={`grid px-10 py-28 d:py-64
             gap-3 t:gap-6 t:py-12 d:items-center bg-blend-multiply transition duration-300 ease-in-out transform hover:scale-105 bg-dark-grey hover:bg-peach bg-opacity-75 bg-center bg-cover bg-m-web-design t:bg-t-web-design d:bg-d-web-design rounded-xl`}
-        >
-          <Link to={`/web-design`} className='grid d:row-span-2'>
+          >
             <h2 className='text-2xl t:text-3xl font-medium tracking-widest'>
               WEB DESIGN
             </h2>
@@ -116,16 +116,16 @@ const Homepage = ({ dropMenu, onDropMenu }) => {
               </p>
               <img src={arrow} alt='arrow' />
             </section>
-          </Link>
-        </motion.li>
-        <motion.li
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, transition: { duration: 0.8 } }}
-          viewport={{ once: false }}
-          key={1}
-          className={`grid px-10 py-28 d:py-28 gap-3 t:gap-6 t:py-12 d:items-center bg-blend-multiply transition duration-300 ease-in-out transform hover:scale-105 bg-dark-grey hover:bg-peach bg-opacity-75 bg-center bg-cover bg-m-app-design t:bg-t-app-design d:bg-d-app-design rounded-xl`}
-        >
-          <Link to={`/app-design`} className='grid'>
+          </motion.li>
+        </Link>
+        <Link to={`/app-design`} className='grid'>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 0.8 } }}
+            viewport={{ once: false }}
+            key={1}
+            className={`grid px-10 py-28 d:py-28 gap-3 t:gap-6 t:py-12 d:items-center bg-blend-multiply transition duration-300 ease-in-out transform hover:scale-105 bg-dark-grey hover:bg-peach bg-opacity-75 bg-center bg-cover bg-m-app-design t:bg-t-app-design d:bg-d-app-design rounded-xl`}
+          >
             <h2 className='text-2xl t:text-3xl font-medium tracking-widest'>
               APP DESIGN
             </h2>
@@ -135,16 +135,16 @@ const Homepage = ({ dropMenu, onDropMenu }) => {
               </p>
               <img src={arrow} alt='arrow' />
             </section>
-          </Link>
-        </motion.li>
-        <motion.li
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, transition: { duration: 0.8 } }}
-          viewport={{ once: false }}
-          key={2}
-          className={`grid px-10 py-28 d:py-28 gap-3 t:gap-6 t:py-12 d:items-center bg-blend-multiply transition duration-300 ease-in-out transform hover:scale-105 bg-dark-grey hover:bg-peach bg-opacity-75 bg-center bg-cover bg-m-graphic-design t:bg-t-graphic-design d:bg-d-graphic-design rounded-xl`}
-        >
-          <Link to={`/graphic-design`} className='grid'>
+          </motion.li>
+        </Link>
+        <Link to={`/graphic-design`} className='grid'>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 0.8 } }}
+            viewport={{ once: false }}
+            key={2}
+            className={`grid px-10 py-28 d:py-28 gap-3 t:gap-6 t:py-12 d:items-center bg-blend-multiply transition duration-300 ease-in-out transform hover:scale-105 bg-dark-grey hover:bg-peach bg-opacity-75 bg-center bg-cover bg-m-graphic-design t:bg-t-graphic-design d:bg-d-graphic-design rounded-xl`}
+          >
             <h2 className='text-2xl t:text-3xl font-medium tracking-widest'>
               GRAPHIC DESIGN
             </h2>
@@ -154,8 +154,8 @@ const Homepage = ({ dropMenu, onDropMenu }) => {
               </p>
               <img src={arrow} alt='arrow' />
             </section>
-          </Link>
-        </motion.li>
+          </motion.li>
+        </Link>
       </ul>
 
       {/* Illustrations */}

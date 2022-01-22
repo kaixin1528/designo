@@ -19,9 +19,9 @@ const Header = ({ dropMenu, onDropMenu }) => {
       animate='visible'
       className='grid grid-cols-3 t:grid-cols-5 d:grid-cols-6 px-6 py-7 t:px-10 t:py-10 d:px-40 d:py-12 items-center'
     >
-      <Link to='/' className='col-span-2 d:col-span-4 w-4/5 t:w-3/5 d:w-1/2'>
+      <Link to='/' className='col-span-2 d:col-span-4'>
         <button className=''>
-          <img src={logoDark} alt='logo' className='w-3/5 d:w-2/5 pt-1' />
+          <img src={logoDark} alt='Designo logo' className='w-32 pt-1' />
         </button>
       </Link>
       <motion.button

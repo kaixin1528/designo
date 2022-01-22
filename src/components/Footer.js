@@ -45,8 +45,8 @@ const Footer = () => {
             <button className='pb-10 border-b t:border-none border-gray-100 border-opacity-20'>
               <img
                 src={logoLight}
-                alt='logo'
-                className='w-3/5 mx-auto t:w-2/5 t:ml-0'
+                alt='Designo logo'
+                className='w-32 mx-auto t:ml-0'
               />
             </button>
           </Link>
