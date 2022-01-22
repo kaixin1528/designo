@@ -110,7 +110,7 @@ const Homepage = ({ dropMenu, onDropMenu }) => {
             <h2 className='text-2xl t:text-3xl font-medium tracking-widest'>
               WEB DESIGN
             </h2>
-            <section className='grid grid-flow-col auto-cols-max mx-auto items-center gap-5'>
+            <section className='grid grid-flow-col auto-cols-max mx-auto items-center pt-0.5 gap-2'>
               <p className='text-sm font-light tracking-widest'>
                 VIEW PROEJCTS
               </p>
@@ -129,7 +129,7 @@ const Homepage = ({ dropMenu, onDropMenu }) => {
             <h2 className='text-2xl t:text-3xl font-medium tracking-widest'>
               APP DESIGN
             </h2>
-            <section className='grid grid-flow-col auto-cols-max mx-auto items-center gap-5'>
+            <section className='grid grid-flow-col auto-cols-max mx-auto items-center gap-2'>
               <p className='text-sm font-light tracking-widest'>
                 VIEW PROEJCTS
               </p>
@@ -148,7 +148,7 @@ const Homepage = ({ dropMenu, onDropMenu }) => {
             <h2 className='text-2xl t:text-3xl font-medium tracking-widest'>
               GRAPHIC DESIGN
             </h2>
-            <section className='grid grid-flow-col auto-cols-max mx-auto items-center gap-5'>
+            <section className='grid grid-flow-col auto-cols-max mx-auto items-center gap-2'>
               <p className='text-sm font-light tracking-widest'>
                 VIEW PROEJCTS
               </p>

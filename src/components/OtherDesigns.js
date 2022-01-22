@@ -15,7 +15,7 @@ const OtherDesigns = ({ design1, design2 }) => {
           <h2 className='text-2xl t:text-3xl uppercase font-medium tracking-widest'>
             {design1} DESIGN
           </h2>
-          <section className='grid grid-flow-col auto-cols-max mx-auto items-center gap-5'>
+          <section className='grid grid-flow-col auto-cols-max mx-auto items-center gap-2'>
             <p className='text-sm font-light tracking-widest'>VIEW PROEJCTS</p>
             <img src={arrow} alt='arrow' />
           </section>
@@ -31,7 +31,7 @@ const OtherDesigns = ({ design1, design2 }) => {
           <h2 className='text-2xl t:text-3xl uppercase font-medium tracking-widest'>
             {design2} DESIGN{" "}
           </h2>
-          <section className='grid grid-flow-col auto-cols-max mx-auto items-center gap-5'>
+          <section className='grid grid-flow-col auto-cols-max mx-auto items-center gap-2'>
             <p className='text-sm font-light tracking-widest'>VIEW PROEJCTS</p>
             <img src={arrow} alt='arrow' />
           </section>
