@@ -14,9 +14,9 @@ const AllDesign = ({ img, title, description }) => {
         className='rounded-t-lg t:rounded-tr-none t:rounded-l-lg d:rounded-t-lg d:rounded-bl-none'
       />
       <article className='grid py-10 px-8 gap-5 text-center'>
-        <h3 className='text-xl text-peach font-medium group-hover:text-white tracking-widest'>
+        <h2 className='text-xl text-peach font-medium group-hover:text-white tracking-widest'>
           {title}
-        </h3>
+        </h2>
         <p className='group-hover:text-white text-xs leading-7 font-light tracking-widest'>
           {description}
         </p>

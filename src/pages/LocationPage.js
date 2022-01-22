@@ -1,7 +1,7 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Menu from "../components/Menu";
-import ScrollToToh5 from "../components/ScrollToTop";
+import ScrollToTop from "../components/ScrollToTop";
 import { motion } from "framer-motion";
 
 const LocationPage = ({ dropMenu, onDropMenu }) => {
@@ -22,14 +22,14 @@ const LocationPage = ({ dropMenu, onDropMenu }) => {
             </h1>
             <section className='grid t:grid-cols-2 t:text-left text-sm gap-6'>
               <div className='grid w-4/5 mx-auto t:ml-0 gap-1'>
-                <h5 className='font-bold'>Designo Central Office</h5>
-                <h5 className='font-light'>3886 Wellington Street</h5>
-                <h5 className='font-light'>Toronto, Ontario M9C 3J5</h5>
+                <p className='font-bold'>Designo Central Office</p>
+                <p className='font-light'>3886 Wellington Street</p>
+                <p className='font-light'>Toronto, Ontario M9C 3J5</p>
               </div>
               <div className='grid w-4/5 mx-auto t:ml-0  gap-1'>
-                <h5 className='font-bold'>Contact</h5>
-                <h5 className='font-light'>P : +1 253-863-8967</h5>
-                <h5 className='font-light'>M : contact@designo.co</h5>
+                <p className='font-bold'>Contact</p>
+                <p className='font-light'>P : +1 253-863-8967</p>
+                <p className='font-light'>M : contact@designo.co</p>
               </div>
             </section>
           </article>
@@ -42,19 +42,19 @@ const LocationPage = ({ dropMenu, onDropMenu }) => {
         >
           <div className='t:rounded-lg bg-no-repeat bg-center bg-cover bg-t-australia d:bg-d-australia h-96 w-full'></div>
           <article className='grid p-20 d:py-28 t:rounded-lg d:col-span-2 gap-6 text-center bg-very-light-peach bg-no-repeat d:bg-[center_top_2rem] bg-cover bg-locations'>
-            <h5 className='text-3xl t:text-4xl font-medium text-peach t:text-left'>
+            <h1 className='text-3xl t:text-4xl font-medium text-peach t:text-left'>
               Australia
-            </h5>
+            </h1>
             <section className='grid t:grid-cols-2 t:text-left text-sm gap-6'>
               <div className='grid w-4/5 mx-auto t:ml-0 gap-1'>
-                <h5 className='font-bold'>Designo AU Office</h5>
-                <h5 className='font-light'>19 Balonne Street</h5>
-                <h5 className='font-light'>New South Wales 2443</h5>
+                <p className='font-bold'>Designo AU Office</p>
+                <p className='font-light'>19 Balonne Street</p>
+                <p className='font-light'>New South Wales 2443</p>
               </div>
               <div className='grid w-4/5 mx-auto t:ml-0 gap-1'>
-                <h5 className='font-bold'>Contact</h5>
-                <h5 className='font-light'>P : (02) 6720 9092</h5>
-                <h5 className='font-light'>M : contact@designo.au</h5>
+                <p className='font-bold'>Contact</p>
+                <p className='font-light'>P : (02) 6720 9092</p>
+                <p className='font-light'>M : contact@designo.au</p>
               </div>
             </section>
           </article>
@@ -67,19 +67,19 @@ const LocationPage = ({ dropMenu, onDropMenu }) => {
         >
           <div className='t:rounded-lg d:order-last bg-no-repeat bg-center bg-cover bg-t-uk d:bg-d-uk h-96 w-full'></div>
           <article className='grid t:rounded-lg d:col-span-2 p-20 d:py-28 gap-6 text-center bg-very-light-peach bg-no-repeat d:bg-[center_top_2rem] bg-cover bg-locations'>
-            <h5 className='text-3xl t:text-4xl font-medium text-peach t:text-left'>
+            <h1 className='text-3xl t:text-4xl font-medium text-peach t:text-left'>
               United Kingdom
-            </h5>
+            </h1>
             <section className='grid t:grid-cols-2 t:text-left text-sm gap-6'>
               <div className='grid w-4/5 mx-auto t:ml-0 gap-1'>
-                <h5 className='font-bold'>Designo UK Office</h5>
-                <h5 className='font-light'>13 Colorado Way</h5>
-                <h5 className='font-light'>Rhyd-y-fro SA8 9GA</h5>
+                <p className='font-bold'>Designo UK Office</p>
+                <p className='font-light'>13 Colorado Way</p>
+                <p className='font-light'>Rhyd-y-fro SA8 9GA</p>
               </div>
               <div className='grid w-4/5 mx-auto t:ml-0 gap-1'>
-                <h5 className='font-bold'>Contact</h5>
-                <h5 className='font-light'>P : 078 3115 1400</h5>
-                <h5 className='font-light'>M : contact@designo.uk</h5>
+                <p className='font-bold'>Contact</p>
+                <p className='font-light'>P : 078 3115 1400</p>
+                <p className='font-light'>M : contact@designo.uk</p>
               </div>
             </section>
           </article>
@@ -87,7 +87,7 @@ const LocationPage = ({ dropMenu, onDropMenu }) => {
       </section>
       <Footer />
       {dropMenu && <Menu onDropMenu={onDropMenu} />}
-      <ScrollToToh5 />
+      <ScrollToTop />
     </main>
   );
 };

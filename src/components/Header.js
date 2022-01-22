@@ -31,7 +31,10 @@ const Header = ({ dropMenu, onDropMenu }) => {
       >
         <img src={dropMenu ? close : menu} alt='menu' className='w-4/5' />
       </motion.button>
-      <nav className='t:grid col-span-3 d:col-span-2 grid-cols-3 text-sm justify-items-end hidden'>
+      <nav
+        aria-label='top navigation'
+        className='t:grid col-span-3 d:col-span-2 grid-cols-3 text-sm justify-items-end hidden'
+      >
         <Link to='/about-us'>
           <button className='font-light tracking-widest hover:underline'>
             OUR COMPANY

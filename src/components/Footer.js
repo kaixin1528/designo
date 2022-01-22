@@ -15,10 +15,10 @@ const Footer = () => {
           <h2 className='text-3xl w-4/5 mx-auto t:w-3/5 d:w-2/3 d:ml-10'>
             Let’s talk about your project
           </h2>
-          <h5 className='text-sm font-light leading-7 t:w-3/5 t:mx-auto d:w-4/5 d:ml-10'>
+          <p className='text-sm font-light leading-7 t:w-3/5 t:mx-auto d:w-4/5 d:ml-10'>
             Ready to take it to the next level? Contact us today and find out
             how our expertise can help your business grow.
-          </h5>
+          </p>
         </article>
         <Link to='/contact' className='mx-auto'>
           <motion.button
@@ -34,7 +34,10 @@ const Footer = () => {
         </Link>
       </section>
       <section className='grid px-10 t:px-0 gap-10 py-16 text-white text-opacity-75 text-sm'>
-        <nav className='grid t:grid-cols-5 gap-10 t:items-start t:border-b border-gray-100 border-opacity-20'>
+        <nav
+          aria-label='secondary navigation'
+          className='grid t:grid-cols-5 gap-10 t:items-start t:border-b border-gray-100 border-opacity-20'
+        >
           <Link
             to='/'
             className='t:col-span-2 d:col-span-3 t:justify-self-start'
@@ -61,26 +64,25 @@ const Footer = () => {
         </nav>
         <section className='grid gap-10 t:grid-cols-3 t:text-left'>
           <section className='grid w-4/5 mx-auto t:w-full t:ml-0 gap-2'>
-            <h5 className='font-bold text-white text-opacity-50'>
+            <p className='font-bold text-white text-opacity-80'>
               Designo Central Office
-            </h5>
-            <h5 className='text-white text-opacity-40'>
-              3886 Wellington Street
-            </h5>
-            <h5 className='text-white text-opacity-40'>
+            </p>
+            <p className='text-white text-opacity-60'>3886 Wellington Street</p>
+            <p className='text-white text-opacity-60'>
               Toronto, Ontario M9C 3J5
-            </h5>
+            </p>
           </section>
           <section className='grid w-4/5 mx-auto t:w-full t:ml-0 gap-2'>
-            <h5 className='font-bold text-white text-opacity-50'>
+            <p className='font-bold text-white text-opacity-80'>
               Contact Us (Central Office)
-            </h5>
-            <h5 className='text-white text-opacity-40'>P : +1 253-863-8967</h5>
-            <h5 className='text-white text-opacity-40'>
-              M : contact@designo.co
-            </h5>
+            </p>
+            <p className='text-white text-opacity-60'>P : +1 253-863-8967</p>
+            <p className='text-white text-opacity-60'>M : contact@designo.co</p>
           </section>
-          <nav className='grid grid-flow-col auto-cols-max gap-4 mx-auto t:mr-0 items-center'>
+          <nav
+            aria-label='side navigation'
+            className='grid grid-flow-col auto-cols-max gap-4 mx-auto t:mr-0 items-center'
+          >
             <button>
               <img src={facebook} alt='facebook' />
             </button>

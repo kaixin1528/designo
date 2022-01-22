@@ -12,7 +12,10 @@ const Menu = ({ onDropMenu }) => {
       exit={{ y: 100, opacity: 0, transition: { duration: 0.5 } }}
       className='absolute inset-0 top-20 bg-gray-600 bg-opacity-50'
     >
-      <nav className='grid gap-10 px-10 py-12 bg-black text-white'>
+      <nav
+        aria-label='main navigation'
+        className='grid gap-10 px-10 py-12 bg-black text-white'
+      >
         <Link to='/about-us'>
           <motion.button
             whileHover={{ scale: 1.1 }}

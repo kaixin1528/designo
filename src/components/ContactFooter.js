@@ -19,7 +19,10 @@ const ContactFooter = () => {
             />
           </button>
         </Link>
-        <nav className='grid t:col-span-3 d:col-span-2 t:grid-cols-3 t:justify-items-end gap-6 t:gap-0'>
+        <nav
+          aria-label='secondary navigation'
+          className='grid t:col-span-3 d:col-span-2 t:grid-cols-3 t:justify-items-end gap-6 t:gap-0'
+        >
           <Link to='/about-us'>
             <button className='hover:underline'>OUR COMPANY</button>
           </Link>
@@ -48,7 +51,10 @@ const ContactFooter = () => {
           <h5 className='text-white text-opacity-40'>P : +1 253-863-8967</h5>
           <h5 className='text-white text-opacity-40'>M : contact@designo.co</h5>
         </section>
-        <nav className='grid grid-flow-col auto-cols-max gap-4 mx-auto t:mr-0 items-center'>
+        <nav
+          aria-label='side navigation'
+          className='grid grid-flow-col auto-cols-max gap-4 mx-auto t:mr-0 items-center'
+        >
           <button>
             <img src={facebook} alt='facebook' />
           </button>

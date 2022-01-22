@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 const Illustration = ({ img, title, description }) => {
   return (
-    <motion.section
+    <motion.li
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1, transition: { duration: 1 } }}
       viewport={{ once: true }}
@@ -16,7 +16,7 @@ const Illustration = ({ img, title, description }) => {
           {description}
         </p>
       </article>
-    </motion.section>
+    </motion.li>
   );
 };
 
