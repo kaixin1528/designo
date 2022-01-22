@@ -1,6 +1,7 @@
 import canada from "../assets/shared/desktop/illustration-canada.svg";
 import australia from "../assets/shared/desktop/illustration-australia.svg";
 import uk from "../assets/shared/desktop/illustration-united-kingdom.svg";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const CompanyLocations = () => {
@@ -16,12 +17,11 @@ const CompanyLocations = () => {
           <img src={canada} alt='canada' className='mx-auto' />
         </div>
         <h3 className='text-xl tracking-widest'>CANADA</h3>
-        <a
-          href='/locations'
-          className='bg-peach hover:bg-light-peach text-white p-3 px-5 mx-auto rounded-lg'
-        >
-          SEE LOCATION
-        </a>
+        <Link to='/locations'>
+          <button className='bg-peach hover:bg-light-peach text-white p-3 px-5 mx-auto rounded-lg'>
+            SEE LOCATION
+          </button>
+        </Link>
       </motion.section>
       <motion.section
         initial={{ opacity: 0 }}
@@ -33,12 +33,11 @@ const CompanyLocations = () => {
           <img src={australia} alt='australia' className='mx-auto' />
         </div>
         <h3 className='text-xl tracking-widest'>AUSTRALIA</h3>
-        <a
-          href='/locations'
-          className='bg-peach hover:bg-light-peach text-white p-3 px-5 mx-auto rounded-lg'
-        >
-          SEE LOCATION
-        </a>
+        <Link to='/locations'>
+          <button className='bg-peach hover:bg-light-peach text-white p-3 px-5 mx-auto rounded-lg'>
+            SEE LOCATION
+          </button>
+        </Link>
       </motion.section>
       <motion.section
         initial={{ opacity: 0 }}
@@ -50,12 +49,11 @@ const CompanyLocations = () => {
           <img src={uk} alt='uk' className='mx-auto' />
         </div>
         <h3 className='text-xl tracking-widest'>UNITED KINGDOM</h3>
-        <a
-          href='/locations'
-          className='bg-peach hover:bg-light-peach text-white p-3 px-5 mx-auto rounded-lg'
-        >
-          SEE LOCATION
-        </a>
+        <Link to='/locations'>
+          <button className='bg-peach hover:bg-light-peach text-white p-3 px-5 mx-auto rounded-lg'>
+            SEE LOCATION
+          </button>
+        </Link>
       </motion.section>
     </section>
   );

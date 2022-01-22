@@ -4,6 +4,7 @@ import twitter from "../assets/shared/desktop/icon-twitter.svg";
 import pinterest from "../assets/shared/desktop/icon-pinterest.svg";
 import instagram from "../assets/shared/desktop/icon-instagram.svg";
 import logoLight from "../assets/shared/desktop/logo-light.png";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Footer = () => {
@@ -19,43 +20,46 @@ const Footer = () => {
             how our expertise can help your business grow.
           </p>
         </article>
-        <motion.a
-          href='/contact'
-          whileHover={{
-            backgroundColor: "#FFAD9B",
-            color: "white",
-            scale: 1.1,
-          }}
-          className='text-sm bg-white text-black font-medium mx-auto py-4 px-6 rounded-lg'
-        >
-          GET IN TOUCH
-        </motion.a>
+        <Link to='/contact' className='mx-auto'>
+          <motion.button
+            whileHover={{
+              backgroundColor: "#FFAD9B",
+              color: "white",
+              scale: 1.1,
+            }}
+            className='text-sm bg-white text-black font-medium py-4 px-6 rounded-lg'
+          >
+            GET IN TOUCH
+          </motion.button>
+        </Link>
       </section>
       <section className='grid px-10 t:px-0 gap-10 py-16 text-white text-opacity-75 text-sm'>
         <nav
           aria-label='secondary navigation'
           className='grid t:grid-cols-5 gap-10 t:items-start t:border-b border-gray-100 border-opacity-20'
         >
-          <a
-            href='/'
-            className='t:col-span-2 d:col-span-3 t:justify-self-start pb-10 border-b t:border-none border-gray-100 border-opacity-20'
+          <Link
+            to='/'
+            className='t:col-span-2 d:col-span-3 t:justify-self-start'
           >
-            <img
-              src={logoLight}
-              alt='Designo logo'
-              className='w-32 mx-auto t:ml-0'
-            />
-          </a>
+            <button className='pb-10 border-b t:border-none border-gray-100 border-opacity-20'>
+              <img
+                src={logoLight}
+                alt='logo'
+                className='w-3/5 mx-auto t:w-2/5 t:ml-0'
+              />
+            </button>
+          </Link>
           <section className='grid t:col-span-3 d:col-span-2 t:grid-cols-3 t:justify-items-end gap-6 t:gap-0'>
-            <a href='/about-us' className='hover:underline'>
-              OUR COMPANY
-            </a>
-            <a href='/locations' className='hover:underline'>
-              LOCATIONS
-            </a>
-            <a href='/contact' className='hover:underline'>
-              CONTACT
-            </a>
+            <Link to='/about-us'>
+              <button className='hover:underline'>OUR COMPANY</button>
+            </Link>
+            <Link to='/locations'>
+              <button className='hover:underline'>LOCATIONS</button>
+            </Link>
+            <Link to='/contact'>
+              <button className='hover:underline'>CONTACT</button>
+            </Link>
           </section>
         </nav>
         <section className='grid gap-10 t:grid-cols-3 t:text-left'>
