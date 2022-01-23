@@ -53,9 +53,9 @@ more about the agency.
 - Semantic HTML5 markup
 - CSS custom properties
 - CSS Grid
-- Mobile-first workflow
 - React
 - Tailwind CSS
+- Mobile-first workflow
 
 ### What I learned
 
