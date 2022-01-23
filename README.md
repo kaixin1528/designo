@@ -54,8 +54,8 @@ more about the agency.
 - CSS custom properties
 - CSS Grid
 - Mobile-first workflow
-- [React]
-- [Tailwind CSS]
+- React
+- Tailwind CSS
 
 ### What I learned
 
