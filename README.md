@@ -44,7 +44,7 @@ more about the agency.
 
 ### Links
 
-- Live Site URL: [https://kaixin-designo.netlify.app](https://kaixin-designo.netlify.app)
+- [Live Site URL](https://kaixin-designo.netlify.app)
 
 ## My process
 
