@@ -44,7 +44,7 @@ more about the agency.
 
 ### Links
 
-- Live Site URL: [https://kaixin-designo.netlify.app](https://kaixin-designo.netlify.app)
+- [Live Site URL](https://kaixin-designo.netlify.app)
 
 ## My process
 
@@ -53,9 +53,9 @@ more about the agency.
 - Semantic HTML5 markup
 - CSS custom properties
 - CSS Grid
+- React
+- Tailwind CSS
 - Mobile-first workflow
-- [React](https://reactjs.org/) 
-- [Tailwind CSS](https://tailwindcss.com/) 
 
 ### What I learned
 
