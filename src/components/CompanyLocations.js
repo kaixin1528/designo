@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const CompanyLocations = () => {
   return (
     <section className='grid d:grid-cols-3 d:mx-40 pb-28 gap-16'>
-      <motion.section
+      <motion.article
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, transition: { duration: 0.8 } }}
         viewport={{ once: true }}
@@ -22,8 +22,8 @@ const CompanyLocations = () => {
             SEE LOCATION
           </button>
         </Link>
-      </motion.section>
-      <motion.section
+      </motion.article>
+      <motion.article
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, transition: { duration: 0.8 } }}
         viewport={{ once: true }}
@@ -38,8 +38,8 @@ const CompanyLocations = () => {
             SEE LOCATION
           </button>
         </Link>
-      </motion.section>
-      <motion.section
+      </motion.article>
+      <motion.article
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, transition: { duration: 0.8 } }}
         viewport={{ once: true }}
@@ -54,7 +54,7 @@ const CompanyLocations = () => {
             SEE LOCATION
           </button>
         </Link>
-      </motion.section>
+      </motion.article>
     </section>
   );
 };

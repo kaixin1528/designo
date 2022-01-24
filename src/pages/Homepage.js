@@ -1,8 +1,5 @@
 import Header from "../components/Header";
 import heroPhone from "../assets/home/desktop/image-hero-phone.png";
-import passionate from "../assets/home/desktop/illustration-passionate.svg";
-import resourceful from "../assets/home/desktop/illustration-resourceful.svg";
-import friendly from "../assets/home/desktop/illustration-friendly.svg";
 import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 import ScrollToTop from "../components/ScrollToTop";
@@ -10,37 +7,9 @@ import Illustration from "../components/Illustration";
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import arrow from "../assets/shared/desktop/icon-right-arrow.svg";
+import { illustrations, introVariants } from "../lib/constant";
 
 const Homepage = ({ dropMenu, onDropMenu }) => {
-  const illustrations = [
-    {
-      img: passionate,
-      title: "PASSIONATE",
-      description:
-        "Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions.",
-    },
-    {
-      img: resourceful,
-      title: "RESOURCEFUL",
-      description:
-        "Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that fulfill our clients' needs.",
-    },
-    {
-      img: friendly,
-      title: "FRIENDLY",
-      description:
-        "We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.",
-    },
-  ];
-
-  const introVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { duration: 1, staggerChildren: 1 },
-    },
-  };
-
   return (
     <main className='grid relative min-h-screen font-jost'>
       <Header dropMenu={dropMenu} onDropMenu={onDropMenu} />
@@ -110,12 +79,12 @@ const Homepage = ({ dropMenu, onDropMenu }) => {
             <h2 className='text-2xl t:text-3xl font-medium tracking-widest'>
               WEB DESIGN
             </h2>
-            <section className='grid grid-flow-col auto-cols-max mx-auto items-center pt-0.5 gap-2'>
+            <article className='grid grid-flow-col auto-cols-max mx-auto items-center pt-0.5 gap-2'>
               <p className='text-sm font-light tracking-widest'>
                 VIEW PROEJCTS
               </p>
               <img src={arrow} alt='arrow' />
-            </section>
+            </article>
           </motion.li>
         </Link>
         <Link to={`/app-design`} className='grid'>
@@ -129,12 +98,12 @@ const Homepage = ({ dropMenu, onDropMenu }) => {
             <h2 className='text-2xl t:text-3xl font-medium tracking-widest'>
               APP DESIGN
             </h2>
-            <section className='grid grid-flow-col auto-cols-max mx-auto items-center gap-2'>
+            <article className='grid grid-flow-col auto-cols-max mx-auto items-center gap-2'>
               <p className='text-sm font-light tracking-widest'>
                 VIEW PROEJCTS
               </p>
               <img src={arrow} alt='arrow' />
-            </section>
+            </article>
           </motion.li>
         </Link>
         <Link to={`/graphic-design`} className='grid'>
@@ -148,12 +117,12 @@ const Homepage = ({ dropMenu, onDropMenu }) => {
             <h2 className='text-2xl t:text-3xl font-medium tracking-widest'>
               GRAPHIC DESIGN
             </h2>
-            <section className='grid grid-flow-col auto-cols-max mx-auto items-center gap-2'>
+            <article className='grid grid-flow-col auto-cols-max mx-auto items-center gap-2'>
               <p className='text-sm font-light tracking-widest'>
                 VIEW PROEJCTS
               </p>
               <img src={arrow} alt='arrow' />
-            </section>
+            </article>
           </motion.li>
         </Link>
       </ul>

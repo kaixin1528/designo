@@ -3,64 +3,12 @@ import OtherDesigns from "../components/OtherDesigns";
 import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 import ScrollToTop from "../components/ScrollToTop";
-
-import express from "../assets/web-design/desktop/image-express.jpg";
-import transfer from "../assets/web-design/desktop/image-transfer.jpg";
-import photon from "../assets/web-design/desktop/image-photon.jpg";
-import builder from "../assets/web-design/desktop/image-builder.jpg";
-import blogr from "../assets/web-design/desktop/image-blogr.jpg";
-import camp from "../assets/web-design/desktop/image-camp.jpg";
 import AllDesign from "../components/AllDesign";
+import { designs, introVariants } from "../lib/constant";
 
 import { motion } from "framer-motion";
 
 const WebDesignPage = ({ dropMenu, onDropMenu }) => {
-  const designs = [
-    {
-      img: express,
-      title: "EXPRESS",
-      description: "A multi-carrier shipping website for ecommerce businesses",
-    },
-    {
-      img: transfer,
-      title: "TRANSFER",
-      description:
-        "Site for low-cost money transfers and sending money within seconds",
-    },
-    {
-      img: photon,
-      title: "PHOTON",
-      description:
-        " A state-of-the-art music player with high-resolution audio and DSP effects",
-    },
-    {
-      img: builder,
-      title: "BUILDER",
-      description:
-        "Connects users with local contractors based on their location",
-    },
-    {
-      img: blogr,
-      title: "BLOGR",
-      description:
-        "Blogr is a platform for creating an online blog or publication",
-    },
-    {
-      img: camp,
-      title: "CAMP",
-      description:
-        "Get expert training in coding, data, design, and digital marketing",
-    },
-  ];
-
-  const introVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { duration: 1, staggerChildren: 1 },
-    },
-  };
-
   return (
     <main className='grid relative min-h-screen'>
       <Header dropMenu={dropMenu} onDropMenu={onDropMenu} />
@@ -90,7 +38,7 @@ const WebDesignPage = ({ dropMenu, onDropMenu }) => {
       </motion.section>
 
       {/* Web Designs */}
-      <section className='grid d:grid-cols-3 mx-6 my-24 t:mx-10 d:mx-40 gap-10 '>
+      <ul className='grid d:grid-cols-3 mx-6 my-24 t:mx-10 d:mx-40 gap-10 '>
         {designs.map((design, index) => {
           return (
             <AllDesign
@@ -101,7 +49,7 @@ const WebDesignPage = ({ dropMenu, onDropMenu }) => {
             />
           );
         })}
-      </section>
+      </ul>
 
       <OtherDesigns design1='app' design2='graphic' />
 

@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 
 const AllDesign = ({ img, title, description }) => {
   return (
-    <motion.button
+    <motion.li
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1, transition: { duration: 0.8 } }}
       viewport={{ once: false }}
-      className='grid t:grid-cols-2 d:grid-cols-1 t:items-center group bg-very-light-peach hover:bg-peach transition duration-200 ease-in-out transform hover:scale-105 rounded-xl'
+      className='grid t:grid-cols-2 d:grid-cols-1 t:items-center group cursor-pointer bg-very-light-peach hover:bg-peach transition duration-200 ease-in-out transform hover:scale-105 rounded-xl'
     >
       <img
         src={img}
@@ -21,7 +21,7 @@ const AllDesign = ({ img, title, description }) => {
           {description}
         </p>
       </article>
-    </motion.button>
+    </motion.li>
   );
 };
 

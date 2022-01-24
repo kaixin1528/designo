@@ -20,18 +20,18 @@ const LocationPage = ({ dropMenu, onDropMenu }) => {
             <h1 className='text-3xl t:text-4xl font-medium text-peach t:text-left'>
               Canada
             </h1>
-            <section className='grid t:grid-cols-2 t:text-left text-sm gap-6'>
-              <div className='grid w-4/5 mx-auto t:ml-0 gap-1'>
+            <article className='grid t:grid-cols-2 t:text-left text-sm gap-6'>
+              <article className='grid w-4/5 mx-auto t:ml-0 gap-1'>
                 <p className='font-bold'>Designo Central Office</p>
                 <p className='font-light'>3886 Wellington Street</p>
                 <p className='font-light'>Toronto, Ontario M9C 3J5</p>
-              </div>
-              <div className='grid w-4/5 mx-auto t:ml-0  gap-1'>
+              </article>
+              <article className='grid w-4/5 mx-auto t:ml-0  gap-1'>
                 <p className='font-bold'>Contact</p>
                 <p className='font-light'>P : +1 253-863-8967</p>
                 <p className='font-light'>M : contact@designo.co</p>
-              </div>
-            </section>
+              </article>
+            </article>
           </article>
         </motion.article>
         <motion.article
@@ -45,18 +45,18 @@ const LocationPage = ({ dropMenu, onDropMenu }) => {
             <h1 className='text-3xl t:text-4xl font-medium text-peach t:text-left'>
               Australia
             </h1>
-            <section className='grid t:grid-cols-2 t:text-left text-sm gap-6'>
-              <div className='grid w-4/5 mx-auto t:ml-0 gap-1'>
+            <article className='grid t:grid-cols-2 t:text-left text-sm gap-6'>
+              <article className='grid w-4/5 mx-auto t:ml-0 gap-1'>
                 <p className='font-bold'>Designo AU Office</p>
                 <p className='font-light'>19 Balonne Street</p>
                 <p className='font-light'>New South Wales 2443</p>
-              </div>
-              <div className='grid w-4/5 mx-auto t:ml-0 gap-1'>
+              </article>
+              <article className='grid w-4/5 mx-auto t:ml-0 gap-1'>
                 <p className='font-bold'>Contact</p>
                 <p className='font-light'>P : (02) 6720 9092</p>
                 <p className='font-light'>M : contact@designo.au</p>
-              </div>
-            </section>
+              </article>
+            </article>
           </article>
         </motion.article>
         <motion.article
@@ -70,18 +70,18 @@ const LocationPage = ({ dropMenu, onDropMenu }) => {
             <h1 className='text-3xl t:text-4xl font-medium text-peach t:text-left'>
               United Kingdom
             </h1>
-            <section className='grid t:grid-cols-2 t:text-left text-sm gap-6'>
-              <div className='grid w-4/5 mx-auto t:ml-0 gap-1'>
+            <article className='grid t:grid-cols-2 t:text-left text-sm gap-6'>
+              <article className='grid w-4/5 mx-auto t:ml-0 gap-1'>
                 <p className='font-bold'>Designo UK Office</p>
                 <p className='font-light'>13 Colorado Way</p>
                 <p className='font-light'>Rhyd-y-fro SA8 9GA</p>
-              </div>
-              <div className='grid w-4/5 mx-auto t:ml-0 gap-1'>
+              </article>
+              <article className='grid w-4/5 mx-auto t:ml-0 gap-1'>
                 <p className='font-bold'>Contact</p>
                 <p className='font-light'>P : 078 3115 1400</p>
                 <p className='font-light'>M : contact@designo.uk</p>
-              </div>
-            </section>
+              </article>
+            </article>
           </article>
         </motion.article>
       </section>

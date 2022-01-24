@@ -59,13 +59,13 @@ const AppDesignPage = ({ dropMenu, onDropMenu }) => {
       <Header dropMenu={dropMenu} onDropMenu={onDropMenu} />
 
       {/* Intro */}
-      <motion.article
+      <motion.section
         variants={introVariants}
         initial='hidden'
         animate='visible'
         className='grid bg-peach bg-no-repeat bg-left bg-fill bg-app-design px-6 py-20 t:mx-10 d:px-20 d:mx-40 gap-10 d:gap-0 text-center text-white t:rounded-xl'
       >
-        <motion.section variants={introVariants} className='grid gap-5'>
+        <motion.article variants={introVariants} className='grid gap-5'>
           <motion.h1
             variants={introVariants}
             className='text-3xl font-medium tracking-wider t:text-4xl t:w-4/5 t:mx-auto'
@@ -79,11 +79,11 @@ const AppDesignPage = ({ dropMenu, onDropMenu }) => {
             Our mobile designs bring intuitive digital solutions to your
             customers right at their fingertips.
           </motion.p>
-        </motion.section>
-      </motion.article>
+        </motion.article>
+      </motion.section>
 
       {/* App Designs */}
-      <section className='grid d:grid-cols-3 mx-6 my-24 t:mx-10 d:mx-40 gap-10 '>
+      <ul className='grid d:grid-cols-3 mx-6 my-24 t:mx-10 d:mx-40 gap-10 '>
         {designs.map((design, index) => {
           return (
             <AllDesign
@@ -94,7 +94,7 @@ const AppDesignPage = ({ dropMenu, onDropMenu }) => {
             />
           );
         })}
-      </section>
+      </ul>
 
       <OtherDesigns design1='web' design2='graphic' />
 

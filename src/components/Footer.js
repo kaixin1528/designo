@@ -42,28 +42,28 @@ const Footer = () => {
             to='/'
             className='t:col-span-2 d:col-span-3 t:justify-self-start'
           >
-            <button className='pb-10 border-b t:border-none border-gray-100 border-opacity-20'>
+            <div className='pb-10 border-b t:border-none border-gray-100 border-opacity-20'>
               <img
                 src={logoLight}
                 alt='Designo logo'
                 className='w-32 mx-auto t:ml-0'
               />
-            </button>
+            </div>
           </Link>
-          <section className='grid t:col-span-3 d:col-span-2 t:grid-cols-3 t:justify-items-end gap-6 t:gap-0'>
+          <article className='grid t:col-span-3 d:col-span-2 t:grid-cols-3 t:justify-items-end gap-6 t:gap-0'>
             <Link to='/about-us'>
-              <button className='hover:underline'>OUR COMPANY</button>
+              <h4 className='hover:underline'>OUR COMPANY</h4>
             </Link>
             <Link to='/locations'>
-              <button className='hover:underline'>LOCATIONS</button>
+              <h4 className='hover:underline'>LOCATIONS</h4>
             </Link>
             <Link to='/contact'>
-              <button className='hover:underline'>CONTACT</button>
+              <h4 className='hover:underline'>CONTACT</h4>
             </Link>
-          </section>
+          </article>
         </nav>
-        <section className='grid gap-10 t:grid-cols-3 t:text-left'>
-          <section className='grid w-4/5 mx-auto t:w-full t:ml-0 gap-2'>
+        <article className='grid gap-10 t:grid-cols-3 t:text-left'>
+          <article className='grid w-4/5 mx-auto t:w-full t:ml-0 gap-2'>
             <p className='font-bold text-white text-opacity-80'>
               Designo Central Office
             </p>
@@ -71,35 +71,35 @@ const Footer = () => {
             <p className='text-white text-opacity-60'>
               Toronto, Ontario M9C 3J5
             </p>
-          </section>
-          <section className='grid w-4/5 mx-auto t:w-full t:ml-0 gap-2'>
+          </article>
+          <article className='grid w-4/5 mx-auto t:w-full t:ml-0 gap-2'>
             <p className='font-bold text-white text-opacity-80'>
               Contact Us (Central Office)
             </p>
             <p className='text-white text-opacity-60'>P : +1 253-863-8967</p>
             <p className='text-white text-opacity-60'>M : contact@designo.co</p>
-          </section>
+          </article>
           <nav
             aria-label='side navigation'
             className='grid grid-flow-col auto-cols-max gap-4 mx-auto t:mr-0 items-center'
           >
-            <button>
+            <div className='cursor-pointer'>
               <img src={facebook} alt='facebook' />
-            </button>
-            <button>
+            </div>
+            <div className='cursor-pointer'>
               <img src={youtube} alt='youtube' />
-            </button>
-            <button>
+            </div>
+            <div className='cursor-pointer'>
               <img src={twitter} alt='twitter' />
-            </button>
-            <button>
+            </div>
+            <div className='cursor-pointer'>
               <img src={pinterest} alt='pinterest' />
-            </button>
-            <button>
+            </div>
+            <div className='cursor-pointer'>
               <img src={instagram} alt='instagram' />
-            </button>
+            </div>
           </nav>
-        </section>
+        </article>
       </section>
     </footer>
   );

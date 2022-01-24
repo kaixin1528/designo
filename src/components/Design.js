@@ -19,10 +19,10 @@ const Design = ({ link, title }) => {
         <h2 className='text-2xl t:text-3xl font-medium tracking-widest'>
           {title} DESIGN
         </h2>
-        <section className='grid grid-flow-col auto-cols-max mx-auto items-center gap-5'>
+        <article className='grid grid-flow-col auto-cols-max mx-auto items-center gap-5'>
           <h5 className='text-sm font-light tracking-widest'>VIEW PROEJCTS</h5>
           <img src={arrow} alt='arrow' />
-        </section>
+        </article>
       </motion.section>
     </Link>
   );

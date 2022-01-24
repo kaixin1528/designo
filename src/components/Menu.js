@@ -17,31 +17,31 @@ const Menu = ({ onDropMenu }) => {
         className='grid gap-10 px-10 py-12 bg-black text-white'
       >
         <Link to='/about-us'>
-          <motion.button
+          <motion.h4
             whileHover={{ scale: 1.1 }}
             className='font-light'
             onClick={onDropMenu}
           >
             OUR COMPANY
-          </motion.button>
+          </motion.h4>
         </Link>
         <Link to='/locations'>
-          <motion.button
+          <motion.h4
             whileHover={{ scale: 1.1 }}
             className='font-light'
             onClick={onDropMenu}
           >
             LOCATIONS
-          </motion.button>
+          </motion.h4>
         </Link>
         <Link to='/contact'>
-          <motion.button
+          <motion.h4
             whileHover={{ scale: 1.1 }}
             className='font-light'
             onClick={onDropMenu}
           >
             CONTACT
-          </motion.button>
+          </motion.h4>
         </Link>
       </nav>
     </motion.aside>

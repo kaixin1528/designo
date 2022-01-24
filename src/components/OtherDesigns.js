@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 const OtherDesigns = ({ design1, design2 }) => {
   return (
-    <section className='grid d:grid-cols-2 pb-80 px-6 t:px-10 d:px-40 gap-6 text-white text-center'>
+    <article className='grid d:grid-cols-2 pb-80 px-6 t:px-10 d:px-40 gap-6 text-white text-center'>
       <Link to={`/${design1}-design`} className='grid'>
-        <motion.button
+        <motion.article
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, transition: { duration: 0.8 } }}
           viewport={{ once: false }}
@@ -15,14 +15,14 @@ const OtherDesigns = ({ design1, design2 }) => {
           <h2 className='text-2xl t:text-3xl uppercase font-medium tracking-widest'>
             {design1} DESIGN
           </h2>
-          <section className='grid grid-flow-col auto-cols-max mx-auto items-center gap-2'>
+          <article className='grid grid-flow-col auto-cols-max mx-auto items-center gap-2'>
             <p className='text-sm font-light tracking-widest'>VIEW PROEJCTS</p>
             <img src={arrow} alt='arrow' />
-          </section>
-        </motion.button>
+          </article>
+        </motion.article>
       </Link>
       <Link to={`/${design2}-design`} className='grid'>
-        <motion.button
+        <motion.article
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, transition: { duration: 0.8 } }}
           viewport={{ once: false }}
@@ -31,13 +31,13 @@ const OtherDesigns = ({ design1, design2 }) => {
           <h2 className='text-2xl t:text-3xl uppercase font-medium tracking-widest'>
             {design2} DESIGN{" "}
           </h2>
-          <section className='grid grid-flow-col auto-cols-max mx-auto items-center gap-2'>
+          <article className='grid grid-flow-col auto-cols-max mx-auto items-center gap-2'>
             <p className='text-sm font-light tracking-widest'>VIEW PROEJCTS</p>
             <img src={arrow} alt='arrow' />
-          </section>
-        </motion.button>
+          </article>
+        </motion.article>
       </Link>
-    </section>
+    </article>
   );
 };
 

@@ -20,9 +20,9 @@ const Header = ({ dropMenu, onDropMenu }) => {
       className='grid grid-cols-3 t:grid-cols-5 d:grid-cols-6 px-6 py-7 t:px-10 t:py-10 d:px-40 d:py-12 items-center'
     >
       <Link to='/' className='col-span-2 d:col-span-4'>
-        <button className=''>
+        <div className=''>
           <img src={logoDark} alt='Designo logo' className='w-32 pt-1' />
-        </button>
+        </div>
       </Link>
       <motion.button
         whileHover={{ scale: 1.1 }}
