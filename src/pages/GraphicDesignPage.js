@@ -3,43 +3,12 @@ import OtherDesigns from "../components/OtherDesigns";
 import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 import ScrollToTop from "../components/ScrollToTop";
-
-import change from "../assets/graphic-design/desktop/image-change.jpg";
-import water from "../assets/graphic-design/desktop/image-boxed-water.jpg";
-import science from "../assets/graphic-design/desktop/image-science.jpg";
 import AllDesign from "../components/AllDesign";
+import { graphicDesigns, introVariants } from "../lib/constant";
 
 import { motion } from "framer-motion";
 
 const GraphicDesignPage = ({ dropMenu, onDropMenu }) => {
-  const designs = [
-    {
-      img: change,
-      title: "TIM BROWN",
-      description:
-        "A book cover designed for Tim Brown’s new release, ‘Change’",
-    },
-    {
-      img: water,
-      title: "BOXED WATER",
-      description: "A simple packaging concept made for Boxed Water",
-    },
-    {
-      img: science,
-      title: "SCIENCE!",
-      description:
-        "A poster made in collaboration with the Federal Art Project",
-    },
-  ];
-
-  const introVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { duration: 1, staggerChildren: 1 },
-    },
-  };
-
   return (
     <main className='grid relative min-h-screen'>
       <Header dropMenu={dropMenu} onDropMenu={onDropMenu} />
@@ -70,7 +39,7 @@ const GraphicDesignPage = ({ dropMenu, onDropMenu }) => {
 
       {/* Graphic Designs */}
       <ul className='grid d:grid-cols-3 mx-6 my-24 t:mx-10 d:mx-40 gap-10 '>
-        {designs.map((design, index) => {
+        {graphicDesigns.map((design, index) => {
           return (
             <AllDesign
               key={index}

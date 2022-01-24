@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 import ScrollToTop from "../components/ScrollToTop";
 import AllDesign from "../components/AllDesign";
-import { designs, introVariants } from "../lib/constant";
+import { webDesigns, introVariants } from "../lib/constant";
 
 import { motion } from "framer-motion";
 
@@ -39,7 +39,7 @@ const WebDesignPage = ({ dropMenu, onDropMenu }) => {
 
       {/* Web Designs */}
       <ul className='grid d:grid-cols-3 mx-6 my-24 t:mx-10 d:mx-40 gap-10 '>
-        {designs.map((design, index) => {
+        {webDesigns.map((design, index) => {
           return (
             <AllDesign
               key={index}
